@@ -41,7 +41,8 @@
 
 body
 {
-
+    background: url("../images/food.png") no-repeat right bottom;
+    overflow-x: hidden;
 }
 /* End General Styles */
 
@@ -51,6 +52,22 @@ body
 {
     padding-top: 4vh;
     background: transparent;
+}
+
+@media (max-width: 767px) {
+    .navbar:nth-child(1)
+    {
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .scroll
+    {
+        background: #efebe2;
+    }
 }
 
 .nav > li > a:hover,
@@ -152,11 +169,24 @@ body
 
 .header .header-text {margin-top: 24vh;}
 
-.header .header-text h1{
+@media (max-width: 767px) {
+    .header .header-text {margin-top: 34vh;}
+}
+
+.header .header-text h1
+{
     color: #255A7E;
     font-family: 'Muli-light',sans-serif;
     font-size: 57px;
     margin-bottom: 4vh;
+}
+
+@media (max-width: 767px) {
+    .header .header-text h1
+    {
+        font-size: 37px;
+        margin-bottom: 6vh;
+    }
 }
 
 .header .header-text p.lead
@@ -209,15 +239,6 @@ body
     min-height: 100vh;
 }
 
-.about img[dir="rtl"]
-{
-    width: 100%;
-    height: 90vh;
-    margin: 0 0 5vh;
-    position: relative;
-    top: -7vh;
-}
-
 .about .text-left img
 {
     width: 80%;
@@ -231,9 +252,42 @@ body
     box-shadow: 0 47px 99px #C5C9CB;
 }
 
+@media (max-width: 767px){
+    .about .text-left img
+    {
+        margin: 10vh 10% 0;
+        height: 60vh;
+    }
+}
+
+.about img[dir="rtl"]
+{
+    width: 100%;
+    height: 90vh;
+    margin: 0 0 5vh;
+    position: relative;
+    top: -7vh;
+}
+
+@media (max-width: 767px) {
+    .about img[dir="rtl"]
+    {
+        top: 0;
+        margin: 0 0 0;
+    }
+}
+
 .about .data
 {
     margin:25vh 0;
+}
+
+@media (max-width: 767px) {
+   .about .data
+    {
+       margin: 8vh 0 13vh 0;
+       text-align: center;
+    }
 }
 
 .about .data h2
@@ -244,12 +298,28 @@ body
     margin-bottom: 6vh;
 }
 
+@media (max-width: 767px) {
+    .about .data h2
+    {
+        font-size: 23px;
+        margin-bottom: 3vh;
+    }
+}
+
 .about .data p.lead
 {
     color: var(--gray);
     font-family: 'Muli-SemiBold',sans-serif;
     font-size: 16px;
     margin-bottom: 8vh;
+}
+
+@media (max-width: 767px) {
+    .about .data p.lead
+    {
+        font-size: 16px;
+        margin-bottom: 3vh;
+    }
 }
 
 .about .data button
@@ -284,14 +354,31 @@ body
 {
     font-size: 36px;
     font-family: 'Georgia',sans-serif;
-    margin: 15vh 0 5vh 0;
+
     padding: 0 100px;
+}
+
+@media (max-width: 767px) {
+    .video h2
+    {
+        padding: 0;
+        font-size: 26px;
+        margin: 15vh 0 5vh 0;
+    }
 }
 
 .video p
 {
     padding: 0 13vw;
     margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+    .video p
+    {
+        padding: 0;
+        margin-bottom: 60px;
+    }
 }
 
 .video .btn-outline-primary
@@ -344,6 +431,14 @@ body
     margin: 0 24% 43px 24%;
 }
 
+@media (max-width: 767px) {
+    .products .lead
+    {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+}
+
 .products .product
 {
     border-radius: 13px;
@@ -364,7 +459,6 @@ body
     font-size: 18px;
     color: var(--primary);
     font-family: 'Georgia',sans-serif;
-    text-align: left;
     padding: 0 19px;
 }
 
@@ -383,7 +477,6 @@ body
     margin: 0;
     width: 100%;
     padding: 0 19px;
-    text-align: left;
 }
 
 .products .btn
@@ -402,7 +495,115 @@ body
 
 /* Start Recipes Section */
 
+.Recipes
+{
+    min-height: 40vh;
+    padding-top: 50px;
+}
 
+.Recipes h2
+{
+    font-size: 36px;
+    font-family: 'Georgia',sans-serif;
+    color: var(--primary);
+    margin-bottom: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-wrapper
+{
+    height: 50vh;
+    max-height: 349px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+    .swiper-slide
+    {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .swiper-slide
+    {
+        width: 70%;
+    }
+}
+
+.swiper-slide img,
+.swiper-slide .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.swiper-slide .overlay
+{
+    position: absolute;
+    top: 100%; left: 0;
+    background: rgba(11,49,75,0.66);
+    transition: all 0.3s ease-in-out;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 0 0 0 30px;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .swiper-slide .overlay
+    {
+        top: 0;
+    }
+}
+
+.swiper-slide:hover .overlay
+{
+    top: 0;
+}
+
+.swiper-slide .overlay h3
+{
+    font-size: 22px;
+    font-family: 'Georgia',sans-serif;
+}
+
+.swiper-slide .overlay p.lead
+{
+    font-size: 14px;
+    font-family: 'Muli-SemiBold',sans-serif;
+    margin-bottom: 40px;
+}
+
+.swiper-slide .overlay a.btn-secondary
+{
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 46px;
+    font-size: 24px;
+}
 
 /* End Recipes Section */
 
@@ -419,8 +620,58 @@ body
     background: white;
     border-radius: 13px;
     box-shadow: 0 17px 16px #EBF1F58C;
-    margin: 15% 0 10% 0;
-    height: 30vh;
+    margin: 20% 0 10% 0;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .news h2
+{
+    font-size: 36px;
+    font-family: 'Georgia',sans-serif;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .newsletter .news h2
+    {
+        font-size: 26px;
+    }
+}
+
+.newsletter .news form
+{
+    width: 67%;
+    min-height: 63px;
+}
+
+@media (max-width: 767px) {
+    .newsletter .news form
+    {
+        width: 90%;
+        min-height: 30px;
+    }
+}
+
+.newsletter .news input
+{
+    border-radius: 13px 0 0 13px;
+    background: #F9FBFB;
+    margin-right: -5px;
+    width: 67%;
+    height: 100%;
+    float: left;
+}
+
+.newsletter .news button
+{
+    width: 33%;
+    height: 100%;
+    border-radius: 0 13px 13px 0;
 }
 
 /* End Newsletter Section */
@@ -432,6 +683,14 @@ footer
     margin: 75px 0 20px 0;
 }
 
+@media (max-width: 767px) {
+    footer
+    {
+        margin: 75px 0 0 0;
+        background: rgba(255,255,255,0.6);
+    }
+}
+
 footer .footer-data
 {
     margin-bottom: 75px;
@@ -441,6 +700,7 @@ footer .footer-data hr
 {
     margin-inline-start: 0;
     width: 65%;
+    min-width: 625px;
 }
 
 footer .footer-data hr:last-of-type
