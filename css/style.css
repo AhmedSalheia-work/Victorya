@@ -41,7 +41,7 @@
 
 body
 {
-    height: 6000px;
+
 }
 /* End General Styles */
 
@@ -400,4 +400,73 @@ body
 
 /* End Product Section */
 
-/*  */
+/* Start Recipes Section */
+
+
+
+/* End Recipes Section */
+
+/* Start Newsletter Section */
+
+.newsletter
+{
+    background: url('../images/overlay.png') no-repeat center center fixed;
+    position: relative;
+}
+
+.newsletter .news
+{
+    background: white;
+    border-radius: 13px;
+    box-shadow: 0 17px 16px #EBF1F58C;
+    margin: 15% 0 10% 0;
+    height: 30vh;
+}
+
+/* End Newsletter Section */
+
+/* Start footer Section */
+
+footer
+{
+    margin: 75px 0 20px 0;
+}
+
+footer .footer-data
+{
+    margin-bottom: 75px;
+}
+
+footer .footer-data hr
+{
+    margin-inline-start: 0;
+    width: 65%;
+}
+
+footer .footer-data hr:last-of-type
+{
+    margin-top: 10px;
+}
+
+
+footer .footer-data .navbar
+{
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+footer .footer-data a.text-primary
+{
+    font-size: 20px;
+    margin: 0 20px 0 7px;
+}
+
+footer p.copyright
+{
+    font-size: 16px;
+    font-family: 'Muli',sans-serif;
+    color: var(--gray);
+}
+/* End footer Section */
