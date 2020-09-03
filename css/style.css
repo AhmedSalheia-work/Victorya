@@ -704,7 +704,8 @@ footer
     footer
     {
         margin: 75px 0 0 0;
-        background: rgba(182,216,9,0.7);
+        background: rgba(121,163,22,0.4);
+        --gray: #303030;
     }
 }
 
