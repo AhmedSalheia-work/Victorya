@@ -16,12 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2681ede-190e-4fa1-8424-3932fadd1d38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +59,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -76,7 +88,9 @@
       <updated>1599019589550</updated>
       <workItem from="1599019590848" duration="16090000" />
       <workItem from="1599109206268" duration="21170000" />
-      <workItem from="1599223557575" duration="29000" />
+      <workItem from="1599223557575" duration="1699000" />
+      <workItem from="1599225740176" duration="17000" />
+      <workItem from="1599231717648" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="EA">
       <created>1599111936266</created>
@@ -103,7 +117,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -115,10 +141,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="EA" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="198" key="#Deployment" timestamp="1599223957737">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1599223957737" />
     <state x="694" y="362" key="#Notifications" timestamp="1599046595901">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="694" y="362" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1599046595901" />
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599224013149">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599224013149" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599123748548">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -127,10 +161,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="558" y="100" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1599111962096" />
-    <state x="461" y="184" key="SettingsEditor" timestamp="1599046561852">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1599231751467">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1599046561852" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1599231751467" />
+    <state x="461" y="184" key="SettingsEditor" timestamp="1599224169805">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1599224169805" />
     <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599111942018">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
